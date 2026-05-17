@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Landmarky is an iPhone app for saving personal landmarks with photos, categories, notes, and Apple Maps.">
-    <title>Landmarky</title>
+    <meta name="description" content="Landmarky is an iPhone app for saving personal landmarks with photos, categories, notes, coordinates, and Apple Maps navigation.">
+    <title>Landmarky | Personal Landmarks on iPhone</title>
     <link rel="icon" href="assets/app-icon.png">
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="styles.css">
@@ -24,10 +24,12 @@
 
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Landmarky home">
-        <img src="assets/app-icon.png" alt="" width="40" height="40">
+        <img src="assets/app-icon.png" alt="" width="44" height="44">
         <span>Landmarky</span>
       </a>
-      <nav aria-label="Primary">
+      <nav aria-label="Primary navigation">
+        <a href="#apple-maps">Apple Maps</a>
+        <a href="#categories">Categories</a>
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
       </nav>
@@ -36,74 +38,93 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">iPhone app for saved places</p>
+          <p class="eyebrow">iPhone app</p>
           <h1>Landmarky</h1>
-          <p class="lede">Save personal landmarks with photos, notes, categories, coordinates, and Apple Maps navigation.</p>
+          <p class="lede">Save places worth returning to with photos, notes, category colors, precise coordinates, and Apple Maps navigation.</p>
           <div class="hero-actions" aria-label="Landmarky links">
             <a class="button primary" href="support.html">Get support</a>
             <a class="button secondary" href="privacy.html">Privacy policy</a>
           </div>
+          <div class="hero-meta" aria-label="Landmarky highlights">
+            <span>Apple Maps</span>
+            <span>Local storage</span>
+            <span>No tracking</span>
+          </div>
         </div>
-        <div class="hero-images" aria-label="Landmarky iPhone screens">
-          <img class="iphone-shot home-shot" src="assets/iphone-home.svg" alt="Landmarky My landmarks screen on iPhone">
-          <img class="iphone-shot map-shot" src="assets/iphone-map.svg" alt="Landmarky Apple Maps screen on iPhone">
+        <div class="device-stage" aria-label="Landmarky iPhone screen previews">
+          <img class="phone-shot home-shot" src="assets/iphone-home.svg" alt="Landmarky My landmarks iPhone screen">
+          <img class="phone-shot map-shot" src="assets/iphone-map.svg" alt="Landmarky Apple Maps iPhone screen">
         </div>
       </section>
 
-      <section class="maps-section">
+      <section id="apple-maps" class="maps-band">
         <div class="section-copy">
-          <p class="eyebrow">Uses Apple Maps</p>
-          <h2>Save a place, see it on the map, then navigate back.</h2>
-          <p>Landmarky uses Apple Maps through the iOS map experience. Your landmarks appear as category-colored map annotations, and the Navigate action opens directions when you are ready to go.</p>
+          <p class="eyebrow">Apple Maps built in</p>
+          <h2>Your saved places live on Apple Maps.</h2>
+          <p>The map tab uses Apple Maps to show your saved places as category-colored annotations. From a landmark detail screen, the Navigate action opens directions so you can get back there when it matters.</p>
         </div>
-        <div class="map-card">
-          <img src="assets/iphone-map.svg" alt="Apple Maps style landmark annotations in Landmarky">
+        <div class="maps-proof">
+          <img src="assets/iphone-map.svg" alt="Apple Maps with Landmarky category annotations">
         </div>
       </section>
 
-      <section class="categories-section" aria-label="Landmarky categories">
+      <section id="categories" class="categories-section" aria-label="Landmarky categories">
         <div class="section-heading">
-          <p class="eyebrow">App categories</p>
-          <h2>All categories from Landmarky</h2>
-          <p>These match the app's category list, system icon choices, and annotation colors.</p>
+          <p class="eyebrow">SF Symbols from the app</p>
+          <h2>Every category uses the same symbol and annotation color.</h2>
+          <p>These category badges mirror the Swift mapping in Landmarky's app code.</p>
         </div>
         <div class="category-grid">
-          <article class="category-card lakes"><span><svg><use href="#icon-water"></use></svg></span><strong>Lakes</strong></article>
-          <article class="category-card hills"><span><svg><use href="#icon-mountain"></use></svg></span><strong>Hills</strong></article>
-          <article class="category-card castles"><span><svg><use href="#icon-castle"></use></svg></span><strong>Castles</strong></article>
-          <article class="category-card lookouts"><span><svg><use href="#icon-lookout"></use></svg></span><strong>Lookouts</strong></article>
-          <article class="category-card restaurants"><span><svg><use href="#icon-restaurant"></use></svg></span><strong>Restaurants</strong></article>
-          <article class="category-card bars"><span><svg><use href="#icon-bar"></use></svg></span><strong>Bars</strong></article>
-          <article class="category-card shops"><span><svg><use href="#icon-shop"></use></svg></span><strong>Shops</strong></article>
-          <article class="category-card entertainment"><span><svg><use href="#icon-music"></use></svg></span><strong>Entertainment</strong></article>
-          <article class="category-card custom"><span><svg><use href="#icon-pin"></use></svg></span><strong>Custom</strong></article>
-          <article class="category-card other"><span><svg><use href="#icon-pin"></use></svg></span><strong>Other</strong></article>
+          <article class="category-card all"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong>All</strong></article>
+          <article class="category-card lakes"><span class="sf-badge" aria-label="water.waves"><svg><use href="#icon-water"></use></svg></span><strong>Lakes</strong></article>
+          <article class="category-card hills"><span class="sf-badge" aria-label="mountain.2.fill"><svg><use href="#icon-mountain"></use></svg></span><strong>Hills</strong></article>
+          <article class="category-card castles"><span class="sf-badge" aria-label="building.columns.fill"><svg><use href="#icon-castle"></use></svg></span><strong>Castles</strong></article>
+          <article class="category-card lookouts"><span class="sf-badge" aria-label="binoculars.fill"><svg><use href="#icon-lookout"></use></svg></span><strong>Lookouts</strong></article>
+          <article class="category-card restaurants"><span class="sf-badge" aria-label="fork.knife.circle.fill"><svg><use href="#icon-restaurant"></use></svg></span><strong>Restaurants</strong></article>
+          <article class="category-card bars"><span class="sf-badge" aria-label="wineglass.fill"><svg><use href="#icon-bar"></use></svg></span><strong>Bars</strong></article>
+          <article class="category-card shops"><span class="sf-badge" aria-label="bag.fill"><svg><use href="#icon-shop"></use></svg></span><strong>Shops</strong></article>
+          <article class="category-card entertainment"><span class="sf-badge" aria-label="music.note.house.fill"><svg><use href="#icon-music"></use></svg></span><strong>Entertainment</strong></article>
+          <article class="category-card custom"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong>Custom</strong></article>
+          <article class="category-card other"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong>Other</strong></article>
         </div>
       </section>
 
-      <section class="feature-grid" aria-label="Features">
+      <section class="icon-band" aria-label="Landmarky app icons">
+        <div class="section-copy">
+          <p class="eyebrow">App icon assets</p>
+          <h2>The site uses the icon assets from the Xcode project.</h2>
+          <p>The website uses the standard, dark, and tinted Landmarky app icons from the app's asset catalog.</p>
+        </div>
+        <div class="icon-showcase">
+          <img src="assets/app-icon.png" alt="Landmarky app icon">
+          <img src="assets/app-icon-dark.png" alt="Landmarky dark app icon">
+          <img src="assets/app-icon-tinted.png" alt="Landmarky tinted app icon">
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Feature summary">
         <article class="feature-card">
-          <span class="feature-icon">+</span>
+          <span class="feature-icon"><svg><use href="#icon-pin"></use></svg></span>
           <h2>Add landmarks fast</h2>
-          <p>Create a landmark from your current position or enter exact latitude and longitude.</p>
+          <p>Create a landmark from your current location or enter exact latitude and longitude.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon">M</span>
-          <h2>Organized map view</h2>
-          <p>Filter and recognize places with categories, colors, photos, and notes.</p>
+          <span class="feature-icon"><svg><use href="#icon-lookout"></use></svg></span>
+          <h2>Recognize places on the map</h2>
+          <p>Photos, notes, categories, and colors make saved places easy to scan later.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon">P</span>
-          <h2>Private on device</h2>
-          <p>No accounts, ads, analytics, or tracking. Your saved places stay local.</p>
+          <span class="feature-icon"><svg><use href="#icon-water"></use></svg></span>
+          <h2>Private by default</h2>
+          <p>No accounts, ads, analytics, or tracking. Landmarky keeps your saved places local.</p>
         </article>
       </section>
 
       <section class="privacy-band">
         <div>
-          <p class="eyebrow">Built for simple privacy</p>
-          <h2>No accounts, ads, analytics, or tracking</h2>
-          <p>Landmarky stores your profile, landmarks, coordinates, notes, and selected photos locally on your iPhone.</p>
+          <p class="eyebrow">Simple privacy</p>
+          <h2>Your landmarks stay on your iPhone.</h2>
+          <p>Profile details, landmark names, coordinates, notes, categories, and selected photos are stored locally by the app.</p>
         </div>
         <a class="button primary" href="privacy.html">Privacy details</a>
       </section>
