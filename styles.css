@@ -60,7 +60,7 @@ nav a[aria-current="page"] { color: var(--ios-green); }
   background:
     radial-gradient(circle at 12% 12%, rgba(52, 199, 89, 0.16), transparent 28%),
     linear-gradient(180deg, #fbfbfd 0%, #f1f7f2 100%);
-  overflow: hidden;
+  overflow: clip;
 }
 .hero-copy { max-width: 620px; }
 .eyebrow { margin: 0 0 12px; color: var(--ios-green-dark); font-size: 0.78rem; font-weight: 900; letter-spacing: 0; text-transform: uppercase; }
@@ -71,21 +71,28 @@ h1 { margin-bottom: 18px; font-size: clamp(3.4rem, 7vw, 6.4rem); line-height: 0.
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 12px 18px; border-radius: 999px; font-weight: 800; text-decoration: none; }
 .button.primary { color: #fff; background: var(--ios-green); box-shadow: 0 10px 24px rgba(52, 199, 89, 0.28); }
 .button.secondary { color: var(--ios-green-dark); background: rgba(52, 199, 89, 0.11); border: 1px solid rgba(52, 199, 89, 0.22); }
-.iphone-stage { position: relative; min-height: 670px; }
+.iphone-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(18px, 3.5vw, 42px);
+  min-width: 0;
+}
 .iphone {
-  position: absolute;
-  width: min(300px, 38vw);
-  min-width: 244px;
+  position: relative;
+  flex: 0 1 300px;
+  width: clamp(248px, 22vw, 300px);
+  min-width: 0;
   padding: 12px;
   border-radius: 44px;
   background: #111114;
   border: 1px solid rgba(255, 255, 255, 0.48);
   box-shadow: var(--shadow);
 }
-.iphone-list { left: 3%; top: 42px; transform: rotate(-4deg); z-index: 2; }
-.iphone-map { right: 4%; top: 0; transform: rotate(4deg); }
+.iphone-list { transform: rotate(-3deg); z-index: 2; }
+.iphone-map { margin-top: clamp(34px, 6vw, 70px); transform: rotate(3deg); }
 .dynamic-island { position: absolute; top: 20px; left: 50%; z-index: 4; width: 86px; height: 26px; transform: translateX(-50%); border-radius: 999px; background: #050506; }
-.iphone-screen { position: relative; min-height: 616px; overflow: hidden; padding: 48px 14px 74px; border-radius: 34px; background: var(--system-bg); }
+.iphone-screen { position: relative; aspect-ratio: 9 / 19.5; overflow: hidden; padding: 48px 14px 74px; border-radius: 34px; background: var(--system-bg); }
 .status-row { position: absolute; top: 14px; left: 22px; right: 22px; display: flex; justify-content: space-between; color: #000; font-size: 0.72rem; font-weight: 800; }
 .iphone-screen h2 { margin-bottom: 13px; font-size: 1.46rem; letter-spacing: 0; }
 .search-pill { margin-bottom: 13px; padding: 9px 12px; border-radius: 12px; color: var(--tertiary); background: #e5e5ea; font-size: 0.84rem; }
@@ -95,8 +102,8 @@ h1 { margin-bottom: 18px; font-size: clamp(3.4rem, 7vw, 6.4rem); line-height: 0.
 .category-chip.lakes { color: var(--ios-blue); }
 .category-chip.hills { color: var(--ios-green-dark); }
 .section-title { margin: 14px 0 8px; color: var(--label); font-size: 0.88rem; font-weight: 850; }
-.card-row { display: flex; gap: 8px; }
-.landmark-card { position: relative; display: flex; align-items: end; width: 124px; height: 118px; padding: 10px; overflow: hidden; border-radius: 10px; color: #fff; font-size: 0.78rem; font-weight: 850; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); background: linear-gradient(145deg, #1684c7, #c2ecff); }
+.card-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.landmark-card { position: relative; display: flex; align-items: end; min-width: 0; height: 118px; padding: 10px; overflow: hidden; border-radius: 10px; color: #fff; font-size: 0.78rem; font-weight: 850; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); background: linear-gradient(145deg, #1684c7, #c2ecff); }
 .landmark-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 38%, rgba(0, 0, 0, 0.48)); }
 .landmark-card svg { position: absolute; top: 10px; right: 10px; width: 26px; height: 26px; fill: none; stroke: rgba(255, 255, 255, 0.9); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .landmark-card span { position: relative; }
@@ -180,16 +187,15 @@ h1 { margin-bottom: 18px; font-size: clamp(3.4rem, 7vw, 6.4rem); line-height: 0.
 .support-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 1060px) {
   .hero { grid-template-columns: 1fr; }
-  .iphone-stage { min-height: 670px; max-width: 760px; width: 100%; margin: 0 auto; }
+  .iphone-stage { max-width: 760px; width: 100%; margin: 0 auto; }
   .category-system { grid-template-columns: 1fr; }
 }
 @media (max-width: 760px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 12px; }
   .hero-actions, .privacy-band { align-items: stretch; flex-direction: column; }
   .button { width: 100%; }
-  .iphone-stage { min-height: 1110px; }
-  .iphone { left: 50%; right: auto; width: min(84vw, 300px); transform: translateX(-50%); }
-  .iphone-list { top: 0; }
-  .iphone-map { top: 500px; }
+  .iphone-stage { flex-direction: column; gap: 24px; }
+  .iphone { width: min(84vw, 300px); flex-basis: auto; }
+  .iphone-list, .iphone-map { margin-top: 0; transform: none; }
   .legend-grid, .feature-grid, .support-grid { grid-template-columns: 1fr; }
 }
