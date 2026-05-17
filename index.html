@@ -10,6 +10,62 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-water" viewBox="0 0 24 24">
+        <path d="M2 8c2.3 0 2.3 2 4.6 2S8.9 8 11.2 8s2.3 2 4.6 2S18.1 8 20.4 8"/>
+        <path d="M2 14c2.3 0 2.3 2 4.6 2s2.3-2 4.6-2 2.3 2 4.6 2 2.3-2 4.6-2"/>
+      </symbol>
+      <symbol id="icon-mountain" viewBox="0 0 24 24">
+        <path d="M3 19h18L15 7l-4 7-2-3-6 8z"/>
+        <path d="M15 7l-2.2 4h4.2"/>
+      </symbol>
+      <symbol id="icon-castle" viewBox="0 0 24 24">
+        <path d="M4 20h16"/>
+        <path d="M6 17h12l1.5-4h-15L6 17z"/>
+        <path d="M5 11h14L12 5 5 11z"/>
+        <path d="M8 17v-4M12 17v-4M16 17v-4"/>
+      </symbol>
+      <symbol id="icon-binoculars" viewBox="0 0 24 24">
+        <path d="M7 9l2-4h2v13H5V9h2zM17 9l-2-4h-2v13h6V9h-2z"/>
+        <path d="M10 10h4"/>
+        <circle cx="8" cy="17" r="3"/>
+        <circle cx="16" cy="17" r="3"/>
+      </symbol>
+      <symbol id="icon-restaurant" viewBox="0 0 24 24">
+        <path d="M7 3v8M5 3v8M9 3v8M5 11h4M7 11v10"/>
+        <path d="M16 3c2 1.8 3 4 3 6.5 0 2.2-1 3.8-3 4.5v7"/>
+      </symbol>
+      <symbol id="icon-bar" viewBox="0 0 24 24">
+        <path d="M5 4h14l-3 8a4.3 4.3 0 0 1-8 0L5 4z"/>
+        <path d="M12 16v5M8 21h8"/>
+      </symbol>
+      <symbol id="icon-bag" viewBox="0 0 24 24">
+        <path d="M6 9h12l-1 12H7L6 9z"/>
+        <path d="M9 9a3 3 0 0 1 6 0"/>
+      </symbol>
+      <symbol id="icon-music" viewBox="0 0 24 24">
+        <path d="M9 18V6l10-2v12"/>
+        <circle cx="6" cy="18" r="3"/>
+        <circle cx="16" cy="16" r="3"/>
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path d="M12 22s7-6.2 7-13a7 7 0 0 0-14 0c0 6.8 7 13 7 13z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+      </symbol>
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path d="M4 11l8-7 8 7"/>
+        <path d="M6 10v10h12V10"/>
+      </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2V6z"/>
+        <path d="M9 4v14M15 6v14"/>
+      </symbol>
+      <symbol id="icon-person" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4"/>
+        <path d="M5 21a7 7 0 0 1 14 0"/>
+      </symbol>
+    </svg>
+
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Landmarky home">
         <img src="assets/app-icon.png" alt="" width="40" height="40">
@@ -22,92 +78,115 @@
     </header>
 
     <main>
-      <section class="hero map-background">
+      <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Private landmark journal</p>
+          <p class="eyebrow">iPhone landmark journal</p>
           <h1>Landmarky</h1>
-          <p class="lede">Save places you want to remember, with photos, categories, notes, and a map view that keeps your collection on your device.</p>
+          <p class="lede">Save places you want to remember, with photos, notes, categories, and Apple Maps-style landmarks that stay on your device.</p>
           <div class="hero-actions" aria-label="Landmarky links">
             <a class="button primary" href="support.html">Get support</a>
-            <a class="button secondary" href="privacy.html">Read privacy policy</a>
+            <a class="button secondary" href="privacy.html">Privacy policy</a>
           </div>
         </div>
 
-        <div class="product-stage" aria-label="Landmarky app previews">
-          <div class="phone phone-home">
-            <div class="phone-bar"></div>
-            <div class="app-screen">
-              <div class="screen-title">My landmarks</div>
+        <div class="iphone-stage" aria-label="Landmarky iPhone app previews">
+          <div class="iphone iphone-list" aria-label="Landmarky home screen preview">
+            <div class="dynamic-island"></div>
+            <div class="iphone-screen">
+              <div class="status-row"><span>9:41</span><span>5G 100%</span></div>
+              <h2>My landmarks</h2>
               <div class="search-pill">Search</div>
-              <div class="category-title">All</div>
-              <div class="landmark-row">
-                <div class="landmark-card lake">
+              <div class="category-strip">
+                <span class="category-chip all active">All</span>
+                <span class="category-chip lakes">Lakes</span>
+                <span class="category-chip hills">Hills</span>
+              </div>
+              <p class="section-title">All</p>
+              <div class="card-row">
+                <article class="landmark-card lake">
+                  <svg><use href="#icon-water"></use></svg>
                   <span>Crystal Lake</span>
-                </div>
-                <div class="landmark-card peak">
+                </article>
+                <article class="landmark-card hill">
+                  <svg><use href="#icon-mountain"></use></svg>
                   <span>Eagle Peak</span>
-                </div>
+                </article>
               </div>
-              <div class="category-title">Castles</div>
-              <div class="landmark-card castle wide">
+              <p class="section-title">Castles</p>
+              <article class="landmark-card castle wide">
+                <svg><use href="#icon-castle"></use></svg>
                 <span>King's Castle</span>
-              </div>
+              </article>
               <div class="tab-bar">
-                <span class="active">Home</span>
-                <span>Map</span>
-                <span>Profile</span>
+                <span class="active"><svg><use href="#icon-home"></use></svg>Home</span>
+                <span><svg><use href="#icon-map"></use></svg>Map</span>
+                <span><svg><use href="#icon-person"></use></svg>Profile</span>
               </div>
             </div>
           </div>
 
-          <div class="phone phone-map">
-            <div class="phone-bar"></div>
-            <div class="app-screen map-screen">
-              <div class="map-pin pin-one">H</div>
-              <div class="map-pin pin-two">L</div>
-              <div class="map-pin pin-three">M</div>
-              <div class="map-control top"></div>
-              <div class="map-control middle"></div>
-              <div class="map-control lower"></div>
-              <div class="add-button">+</div>
-            </div>
-          </div>
-
-          <div class="phone phone-profile">
-            <div class="phone-bar"></div>
-            <div class="app-screen">
-              <div class="screen-title small">Profile</div>
-              <div class="profile-icon">O</div>
-              <div class="form-section">
-                <p>Profile</p>
-                <div class="form-line">First name</div>
-                <div class="form-line muted">Last name</div>
-                <div class="form-line">You have: 8 landmarks</div>
-              </div>
-              <div class="form-section">
-                <p>Achievements</p>
-                <div class="form-line muted">So far you don't have any achievements</div>
+          <div class="iphone iphone-map" aria-label="Landmarky map screen preview">
+            <div class="dynamic-island"></div>
+            <div class="iphone-screen map-phone-screen">
+              <div class="status-row"><span>9:41</span><span>5G 100%</span></div>
+              <div class="apple-map">
+                <span class="water-shape"></span>
+                <span class="park-shape park-one"></span>
+                <span class="park-shape park-two"></span>
+                <span class="road main-road"></span>
+                <span class="road road-one"></span>
+                <span class="road road-two"></span>
+                <span class="road road-three"></span>
+                <span class="map-label label-one">Crystal Lake</span>
+                <span class="map-label label-two">Sky Tower</span>
+                <span class="annotation lakes pin-a"><svg><use href="#icon-water"></use></svg></span>
+                <span class="annotation lookouts pin-b"><svg><use href="#icon-binoculars"></use></svg></span>
+                <span class="annotation restaurants pin-c"><svg><use href="#icon-restaurant"></use></svg></span>
+                <span class="annotation bars pin-d"><svg><use href="#icon-bar"></use></svg></span>
+                <span class="map-control top"></span>
+                <span class="map-control middle"></span>
+                <span class="map-control lower"></span>
+                <span class="add-button">+</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <section class="category-system" aria-label="Landmarky category colors">
+        <div class="section-copy">
+          <p class="eyebrow">System category styling</p>
+          <h2>Website colors match the app annotations</h2>
+          <p>Landmarky links every saved place to the same category icons and iOS system colors used inside the SwiftUI app.</p>
+        </div>
+        <div class="legend-grid">
+          <span class="legend-item lakes"><span class="annotation-mini"><svg><use href="#icon-water"></use></svg></span>Lakes</span>
+          <span class="legend-item hills"><span class="annotation-mini"><svg><use href="#icon-mountain"></use></svg></span>Hills</span>
+          <span class="legend-item castles"><span class="annotation-mini"><svg><use href="#icon-castle"></use></svg></span>Castles</span>
+          <span class="legend-item lookouts"><span class="annotation-mini"><svg><use href="#icon-binoculars"></use></svg></span>Lookouts</span>
+          <span class="legend-item restaurants"><span class="annotation-mini"><svg><use href="#icon-restaurant"></use></svg></span>Restaurants</span>
+          <span class="legend-item bars"><span class="annotation-mini"><svg><use href="#icon-bar"></use></svg></span>Bars</span>
+          <span class="legend-item shops"><span class="annotation-mini"><svg><use href="#icon-bag"></use></svg></span>Shops</span>
+          <span class="legend-item entertainment"><span class="annotation-mini"><svg><use href="#icon-music"></use></svg></span>Entertainment</span>
+          <span class="legend-item other"><span class="annotation-mini"><svg><use href="#icon-pin"></use></svg></span>Custom and other</span>
+        </div>
+      </section>
+
       <section class="feature-grid" aria-label="Features">
         <article class="feature-card">
-          <span class="feature-icon">+</span>
+          <span class="feature-icon"><svg><use href="#icon-pin"></use></svg></span>
           <h2>Add places fast</h2>
           <p>Create a landmark from your current position, enter exact coordinates, or edit it later when you know more.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-icon">C</span>
-          <h2>Organize by category</h2>
-          <p>Group lakes, hills, castles, lookouts, restaurants, bars, shops, entertainment, and your own custom categories.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon">M</span>
+          <span class="feature-icon"><svg><use href="#icon-map"></use></svg></span>
           <h2>Map and navigate</h2>
           <p>See saved landmarks on the map, open a place detail, and start navigation when it is time to go back.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon"><svg><use href="#icon-person"></use></svg></span>
+          <h2>Private by design</h2>
+          <p>Your profile, saved places, coordinates, notes, and selected photos stay local on your iPhone.</p>
         </article>
       </section>
 
