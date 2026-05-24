@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="430" height="900" viewBox="0 0 430 900" role="img" aria-labelledby="title desc">
-  <title id="title">Landmarky iPhone home screen</title>
-  <desc id="desc">An iPhone showing the Landmarky My landmarks screen with saved category cards.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="797" viewBox="0 0 430 797" role="img" aria-labelledby="title desc">
+  <title id="title">Worldwanderer iPhone home screen</title>
+  <desc id="desc">An iPhone showing the Worldwanderer My landmarks screen with saved category cards.</desc>
   <defs>
     <linearGradient id="lake" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1276ae"/><stop offset="1" stop-color="#b8e7ff"/></linearGradient>
     <linearGradient id="hill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#248a3d"/><stop offset="1" stop-color="#c7efcc"/></linearGradient>
     <linearGradient id="castle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6e6e73"/><stop offset="1" stop-color="#dedee4"/></linearGradient>
   </defs>
-  <ellipse cx="215" cy="872" rx="150" ry="18" fill="#1c1c1e" opacity=".14"/>
-  <rect x="38" y="10" width="354" height="880" rx="64" fill="#111114"/>
-  <rect x="54" y="26" width="322" height="848" rx="50" fill="#f2f2f7"/>
+  <ellipse cx="215" cy="779" rx="150" ry="18" fill="#1c1c1e" opacity=".14"/>
+  <rect x="38" y="10" width="354" height="767" rx="58" fill="#111114"/>
+  <rect x="54" y="26" width="322" height="735" rx="46" fill="#f2f2f7"/>
   <rect x="166" y="45" width="98" height="31" rx="15.5" fill="#050506"/>
   <text x="84" y="70" fill="#1c1c1e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="800">9:41</text>
   <text x="286" y="70" fill="#1c1c1e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="800">5G 100%</text>
@@ -25,22 +25,26 @@
   <g>
     <rect x="84" y="333" width="126" height="142" rx="13" fill="url(#lake)"/>
     <rect x="84" y="333" width="126" height="142" rx="13" fill="#000" opacity=".22"/>
-    <path d="M162 368c5 0 5 4 10 4s5-4 10-4 5 4 10 4" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
-    <path d="M162 379c5 0 5 4 10 4s5-4 10-4 5 4 10 4" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+    <circle cx="178" cy="367" r="21" fill="#fff" stroke="#007aff" stroke-width="4"/>
+    <path d="M165 362c4.5 0 4.5 3.4 9 3.4s4.5-3.4 9-3.4 4.5 3.4 9 3.4" fill="none" stroke="#007aff" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M165 371c4.5 0 4.5 3.4 9 3.4s4.5-3.4 9-3.4 4.5 3.4 9 3.4" fill="none" stroke="#007aff" stroke-width="2.8" stroke-linecap="round"/>
     <text x="100" y="446" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" font-weight="900">Crystal Lake</text>
   </g>
   <g>
     <rect x="220" y="333" width="126" height="142" rx="13" fill="url(#hill)"/>
-    <path d="M292 388l21-34 29 57h-76l20-30 10 15" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="314" cy="367" r="21" fill="#fff" stroke="#34c759" stroke-width="4"/>
+    <path d="M299 377h30l-10-21-8 14-4-6-8 13z" fill="none" stroke="#34c759" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M319 356l-3.8 7h7.2" fill="none" stroke="#34c759" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="238" y="446" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" font-weight="900">Eagle Peak</text>
   </g>
   <text x="84" y="520" fill="#1c1c1e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="900">Castles</text>
   <rect x="84" y="540" width="262" height="142" rx="13" fill="url(#castle)"/>
-  <path d="M288 602h50M294 592h38l5-17h-48l5 17zM291 569h44l-22-19-22 19zM303 592v-14M313 592v-14M323 592v-14" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="314" cy="586" r="22" fill="#fff" stroke="#8e8e93" stroke-width="4"/>
+  <path d="M301 594h26M306 588h16l3-10h-22l3 10zM304 575h20l-10-9-10 9zM310 588v-8M314 588v-8M318 588v-8" fill="none" stroke="#8e8e93" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="103" y="655" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="900">King's Castle</text>
-  <rect x="54" y="790" width="322" height="84" fill="#fff" opacity=".97"/>
-  <path d="M54 790h322" stroke="#d1d1d6"/>
-  <text x="93" y="831" fill="#34c759" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="900">Home</text>
-  <text x="199" y="831" fill="#8e8e93" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="800">Map</text>
-  <text x="288" y="831" fill="#8e8e93" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="800">Profile</text>
+  <rect x="54" y="700" width="322" height="61" fill="#fff" opacity=".97"/>
+  <path d="M54 700h322" stroke="#d1d1d6"/>
+  <text x="93" y="739" fill="#34c759" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="900">Home</text>
+  <text x="199" y="739" fill="#8e8e93" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="800">Map</text>
+  <text x="288" y="739" fill="#8e8e93" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="800">Profile</text>
 </svg>
