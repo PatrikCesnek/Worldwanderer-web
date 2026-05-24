@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="home">
     <svg class="icon-sprite" aria-hidden="true">
       <symbol id="icon-water" viewBox="0 0 24 24"><path d="M2 8c2.4 0 2.4 2 4.8 2S9.2 8 11.6 8 14 10 16.4 10 18.8 8 21.2 8"/><path d="M2 14c2.4 0 2.4 2 4.8 2s2.4-2 4.8-2 2.4 2 4.8 2 2.4-2 4.8-2"/></symbol>
       <symbol id="icon-mountain" viewBox="0 0 24 24"><path d="M3 19h18L15 7l-4 7-2-3-6 8z"/><path d="M15 7l-2.2 4h4.2"/></symbol>
@@ -27,28 +27,35 @@
         <img src="assets/app-icon.png" alt="" width="44" height="44">
         <span>Worldwanderer</span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#apple-maps">Apple Maps</a>
-        <a href="#categories">Categories</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
+      <div class="header-links">
+        <nav aria-label="Primary navigation">
+          <a href="#apple-maps" data-i18n="nav.appleMaps">Apple Maps</a>
+          <a href="#categories" data-i18n="nav.categories">Categories</a>
+          <a href="support.html" data-i18n="nav.support">Support</a>
+          <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        </nav>
+        <div class="language-switcher" aria-label="Language">
+          <a href="?lang=en" data-lang-option="en">EN</a>
+          <a href="?lang=cz" data-lang-option="cz">CZ</a>
+          <a href="?lang=sk" data-lang-option="sk">SK</a>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">iPhone app</p>
+          <p class="eyebrow" data-i18n="home.heroEyebrow">iPhone app</p>
           <h1>Worldwanderer</h1>
-          <p class="lede">Save places worth returning to with photos, notes, category colors, precise coordinates, and Apple Maps navigation.</p>
+          <p class="lede" data-i18n="home.heroLede">Save places worth returning to with photos, notes, category colors, precise coordinates, and Apple Maps navigation.</p>
           <div class="hero-actions" aria-label="Worldwanderer links">
-            <a class="button primary" href="support.html">Get support</a>
-            <a class="button secondary" href="privacy.html">Privacy policy</a>
+            <a class="button primary" href="support.html" data-i18n="common.getSupport">Get support</a>
+            <a class="button secondary" href="privacy.html" data-i18n="common.privacyPolicy">Privacy policy</a>
           </div>
           <div class="hero-meta" aria-label="Worldwanderer highlights">
             <span>Apple Maps</span>
-            <span>Local storage</span>
-            <span>No tracking</span>
+            <span data-i18n="common.localStorage">Local storage</span>
+            <span data-i18n="common.noTracking">No tracking</span>
           </div>
         </div>
         <div class="device-stage" aria-label="Worldwanderer iPhone screen previews">
@@ -63,9 +70,9 @@
 
       <section id="apple-maps" class="maps-band">
         <div class="section-copy">
-          <p class="eyebrow">Apple Maps built in</p>
-          <h2>Your saved places live on Apple Maps.</h2>
-          <p>The map tab uses Apple Maps to show your saved places as category-colored annotations. From a landmark detail screen, the Navigate action opens directions so you can get back there when it matters.</p>
+          <p class="eyebrow" data-i18n="home.mapsEyebrow">Apple Maps built in</p>
+          <h2 data-i18n="home.mapsTitle">Your saved places live on Apple Maps.</h2>
+          <p data-i18n="home.mapsText">The map tab uses Apple Maps to show your saved places as category-colored annotations. From a landmark detail screen, the Navigate action opens directions so you can get back there when it matters.</p>
         </div>
         <div class="maps-proof">
           <div class="phone-shot proof-shot">
@@ -76,57 +83,57 @@
 
       <section class="screen-gallery" aria-label="Worldwanderer app screenshots">
         <div class="section-heading">
-          <p class="eyebrow">Real app screens</p>
-          <h2>Trips, profile progress, and achievements use the same clean iPhone interface.</h2>
+          <p class="eyebrow" data-i18n="home.screensEyebrow">Real app screens</p>
+          <h2 data-i18n="home.screensTitle">Trips, profile progress, and achievements use the same clean iPhone interface.</h2>
         </div>
         <div class="screen-grid">
           <article class="screen-card">
             <div class="phone-shot mini-shot">
               <img src="assets/worldwanderer-diary.jpg" alt="Worldwanderer Travel Diary iPhone screen" width="720" height="1564">
             </div>
-            <strong>Travel Diary</strong>
+            <strong data-i18n="screens.diary">Travel Diary</strong>
           </article>
           <article class="screen-card">
             <div class="phone-shot mini-shot">
               <img src="assets/worldwanderer-profile.jpg" alt="Worldwanderer Profile iPhone screen" width="720" height="1564">
             </div>
-            <strong>Profile</strong>
+            <strong data-i18n="screens.profile">Profile</strong>
           </article>
           <article class="screen-card">
             <div class="phone-shot mini-shot">
               <img src="assets/worldwanderer-achievements.jpg" alt="Worldwanderer Achievements iPhone screen" width="720" height="1564">
             </div>
-            <strong>Achievements</strong>
+            <strong data-i18n="screens.achievements">Achievements</strong>
           </article>
         </div>
       </section>
 
       <section id="categories" class="categories-section" aria-label="Worldwanderer categories">
         <div class="section-heading">
-          <p class="eyebrow">SF Symbols from the app</p>
-          <h2>Every category uses the same symbol and annotation color.</h2>
-          <p>These category badges mirror the Swift mapping in Worldwanderer's app code.</p>
+          <p class="eyebrow" data-i18n="home.categoriesEyebrow">SF Symbols from the app</p>
+          <h2 data-i18n="home.categoriesTitle">Every category uses the same symbol and annotation color.</h2>
+          <p data-i18n="home.categoriesText">These category badges mirror the Swift mapping in Worldwanderer's app code.</p>
         </div>
         <div class="category-grid">
-          <article class="category-card all"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong>All</strong></article>
-          <article class="category-card lakes"><span class="sf-badge" aria-label="water.waves"><svg><use href="#icon-water"></use></svg></span><strong>Lakes</strong></article>
-          <article class="category-card hills"><span class="sf-badge" aria-label="mountain.2.fill"><svg><use href="#icon-mountain"></use></svg></span><strong>Hills</strong></article>
-          <article class="category-card castles"><span class="sf-badge" aria-label="building.columns.fill"><svg><use href="#icon-castle"></use></svg></span><strong>Castles</strong></article>
-          <article class="category-card lookouts"><span class="sf-badge" aria-label="binoculars.fill"><svg><use href="#icon-lookout"></use></svg></span><strong>Lookouts</strong></article>
-          <article class="category-card restaurants"><span class="sf-badge" aria-label="fork.knife.circle.fill"><svg><use href="#icon-restaurant"></use></svg></span><strong>Restaurants</strong></article>
-          <article class="category-card bars"><span class="sf-badge" aria-label="wineglass.fill"><svg><use href="#icon-bar"></use></svg></span><strong>Bars</strong></article>
-          <article class="category-card shops"><span class="sf-badge" aria-label="bag.fill"><svg><use href="#icon-shop"></use></svg></span><strong>Shops</strong></article>
-          <article class="category-card entertainment"><span class="sf-badge" aria-label="music.note.house.fill"><svg><use href="#icon-music"></use></svg></span><strong>Entertainment</strong></article>
-          <article class="category-card custom"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong>Custom</strong></article>
-          <article class="category-card other"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong>Other</strong></article>
+          <article class="category-card all"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong data-i18n="categories.all">All</strong></article>
+          <article class="category-card lakes"><span class="sf-badge" aria-label="water.waves"><svg><use href="#icon-water"></use></svg></span><strong data-i18n="categories.lakes">Lakes</strong></article>
+          <article class="category-card hills"><span class="sf-badge" aria-label="mountain.2.fill"><svg><use href="#icon-mountain"></use></svg></span><strong data-i18n="categories.hills">Hills</strong></article>
+          <article class="category-card castles"><span class="sf-badge" aria-label="building.columns.fill"><svg><use href="#icon-castle"></use></svg></span><strong data-i18n="categories.castles">Castles</strong></article>
+          <article class="category-card lookouts"><span class="sf-badge" aria-label="binoculars.fill"><svg><use href="#icon-lookout"></use></svg></span><strong data-i18n="categories.lookouts">Lookouts</strong></article>
+          <article class="category-card restaurants"><span class="sf-badge" aria-label="fork.knife.circle.fill"><svg><use href="#icon-restaurant"></use></svg></span><strong data-i18n="categories.restaurants">Restaurants</strong></article>
+          <article class="category-card bars"><span class="sf-badge" aria-label="wineglass.fill"><svg><use href="#icon-bar"></use></svg></span><strong data-i18n="categories.bars">Bars</strong></article>
+          <article class="category-card shops"><span class="sf-badge" aria-label="bag.fill"><svg><use href="#icon-shop"></use></svg></span><strong data-i18n="categories.shops">Shops</strong></article>
+          <article class="category-card entertainment"><span class="sf-badge" aria-label="music.note.house.fill"><svg><use href="#icon-music"></use></svg></span><strong data-i18n="categories.entertainment">Entertainment</strong></article>
+          <article class="category-card custom"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong data-i18n="categories.custom">Custom</strong></article>
+          <article class="category-card other"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong data-i18n="categories.other">Other</strong></article>
         </div>
       </section>
 
       <section class="icon-band" aria-label="Worldwanderer app icons">
         <div class="section-copy">
-          <p class="eyebrow">App icon assets</p>
-          <h2>The site uses the icon assets from the Xcode project.</h2>
-          <p>The website uses the standard, dark, and tinted Worldwanderer app icons from the app's asset catalog.</p>
+          <p class="eyebrow" data-i18n="home.iconsEyebrow">App icon assets</p>
+          <h2 data-i18n="home.iconsTitle">The site uses the icon assets from the Xcode project.</h2>
+          <p data-i18n="home.iconsText">The website uses the standard, dark, and tinted Worldwanderer app icons from the app's asset catalog.</p>
         </div>
         <div class="icon-showcase">
           <img src="assets/app-icon.png" alt="Worldwanderer app icon">
@@ -138,35 +145,36 @@
       <section class="feature-grid" aria-label="Feature summary">
         <article class="feature-card">
           <span class="feature-icon"><svg><use href="#icon-pin"></use></svg></span>
-          <h2>Add landmarks fast</h2>
-          <p>Create a landmark from your current location or enter exact latitude and longitude.</p>
+          <h2 data-i18n="home.featureAddTitle">Add landmarks fast</h2>
+          <p data-i18n="home.featureAddText">Create a landmark from your current location or enter exact latitude and longitude.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon"><svg><use href="#icon-lookout"></use></svg></span>
-          <h2>Recognize places on the map</h2>
-          <p>Photos, notes, categories, and colors make saved places easy to scan later.</p>
+          <h2 data-i18n="home.featureMapTitle">Recognize places on the map</h2>
+          <p data-i18n="home.featureMapText">Photos, notes, categories, and colors make saved places easy to scan later.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon"><svg><use href="#icon-water"></use></svg></span>
-          <h2>Private by default</h2>
-          <p>No accounts, ads, analytics, or tracking. Worldwanderer keeps your saved places local.</p>
+          <h2 data-i18n="home.featurePrivacyTitle">Private by default</h2>
+          <p data-i18n="home.featurePrivacyText">No accounts, ads, analytics, or tracking. Worldwanderer keeps your saved places local.</p>
         </article>
       </section>
 
       <section class="privacy-band">
         <div>
-          <p class="eyebrow">Simple privacy</p>
-          <h2>Your landmarks stay on your iPhone.</h2>
-          <p>Profile details, landmark names, coordinates, notes, categories, and selected photos are stored locally by the app.</p>
+          <p class="eyebrow" data-i18n="home.privacyEyebrow">Simple privacy</p>
+          <h2 data-i18n="home.privacyTitle">Your landmarks stay on your iPhone.</h2>
+          <p data-i18n="home.privacyText">Profile details, landmark names, coordinates, notes, categories, and selected photos are stored locally by the app.</p>
         </div>
-        <a class="button primary" href="privacy.html">Privacy details</a>
+        <a class="button primary" href="privacy.html" data-i18n="home.privacyButton">Privacy details</a>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>&copy; 2026 Patrik Cesnek</span>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html" data-i18n="nav.support">Support</a>
+      <a href="privacy.html" data-i18n="common.privacyPolicyTitle">Privacy Policy</a>
     </footer>
+    <script src="assets/i18n.js"></script>
   </body>
 </html>

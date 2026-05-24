@@ -9,55 +9,63 @@
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="support">
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Worldwanderer home">
         <img src="assets/app-icon.png" alt="" width="40" height="40">
         <span>Worldwanderer</span>
       </a>
-      <nav aria-label="Primary">
-        <a href="index.html#apple-maps">Apple Maps</a>
-        <a href="index.html#categories">Categories</a>
-        <a href="support.html" aria-current="page">Support</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
+      <div class="header-links">
+        <nav aria-label="Primary">
+          <a href="index.html#apple-maps" data-i18n="nav.appleMaps">Apple Maps</a>
+          <a href="index.html#categories" data-i18n="nav.categories">Categories</a>
+          <a href="support.html" aria-current="page" data-i18n="nav.support">Support</a>
+          <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        </nav>
+        <div class="language-switcher" aria-label="Language">
+          <a href="?lang=en" data-lang-option="en">EN</a>
+          <a href="?lang=cz" data-lang-option="cz">CZ</a>
+          <a href="?lang=sk" data-lang-option="sk">SK</a>
+        </div>
+      </div>
     </header>
 
     <main class="page-shell">
       <section class="page-hero map-background">
-        <p class="eyebrow">Worldwanderer support</p>
-        <h1>Need help with Worldwanderer?</h1>
-        <p>For app issues, feedback, and feature requests, email <a href="mailto:pcesnek290@gmail.com">pcesnek290@gmail.com</a>.</p>
+        <p class="eyebrow" data-i18n="support.eyebrow">Worldwanderer support</p>
+        <h1 data-i18n="support.title">Need help with Worldwanderer?</h1>
+        <p><span data-i18n="support.introPrefix">For app issues, feedback, and feature requests, email</span> <a href="mailto:pcesnek290@gmail.com">pcesnek290@gmail.com</a>.</p>
       </section>
 
       <section class="support-grid" aria-label="Support topics">
         <article class="support-item">
-          <h2>Location permission</h2>
-          <p>If the map cannot find your current position, open iOS Settings, choose Worldwanderer, and allow location access while using the app.</p>
+          <h2 data-i18n="support.locationTitle">Location permission</h2>
+          <p data-i18n="support.locationText">If the map cannot find your current position, open iOS Settings, choose Worldwanderer, and allow location access while using the app.</p>
         </article>
         <article class="support-item">
-          <h2>Photos and camera</h2>
-          <p>If adding a photo does not work, check that Worldwanderer has camera or photo access in iOS Settings. You can still save landmarks without photos.</p>
+          <h2 data-i18n="support.photosTitle">Photos and camera</h2>
+          <p data-i18n="support.photosText">If adding a photo does not work, check that Worldwanderer has camera or photo access in iOS Settings. You can still save landmarks without photos.</p>
         </article>
         <article class="support-item">
-          <h2>Delete saved data</h2>
-          <p>You can delete individual landmarks from their edit screen. To remove all Worldwanderer data, delete the app from your device.</p>
+          <h2 data-i18n="support.deleteTitle">Delete saved data</h2>
+          <p data-i18n="support.deleteText">You can delete individual landmarks from their edit screen. To remove all Worldwanderer data, delete the app from your device.</p>
         </article>
         <article class="support-item">
-          <h2>Apple Maps navigation</h2>
-          <p>Worldwanderer uses Apple Maps for map display and directions. If navigation does not open, check that Maps is available on your iPhone.</p>
+          <h2 data-i18n="support.mapsTitle">Apple Maps navigation</h2>
+          <p data-i18n="support.mapsText">Worldwanderer uses Apple Maps for map display and directions. If navigation does not open, check that Maps is available on your iPhone.</p>
         </article>
         <article class="support-item">
-          <h2>Privacy</h2>
-          <p>Worldwanderer does not use accounts, ads, analytics, or tracking. Read the <a href="privacy.html">Privacy Policy</a> for details.</p>
+          <h2 data-i18n="support.privacyTitle">Privacy</h2>
+          <p><span data-i18n="support.privacyTextPrefix">Worldwanderer does not use accounts, ads, analytics, or tracking. Read the</span> <a href="privacy.html" data-i18n="common.privacyPolicyTitle">Privacy Policy</a><span data-i18n="support.privacyTextSuffix"> for details.</span></p>
         </article>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>&copy; 2026 Patrik Cesnek</span>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html" data-i18n="nav.support">Support</a>
+      <a href="privacy.html" data-i18n="common.privacyPolicyTitle">Privacy Policy</a>
     </footer>
+    <script src="assets/i18n.js"></script>
   </body>
 </html>

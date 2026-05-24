@@ -9,61 +9,69 @@
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="privacy">
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Worldwanderer home">
         <img src="assets/app-icon.png" alt="" width="40" height="40">
         <span>Worldwanderer</span>
       </a>
-      <nav aria-label="Primary">
-        <a href="index.html#apple-maps">Apple Maps</a>
-        <a href="index.html#categories">Categories</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html" aria-current="page">Privacy</a>
-      </nav>
+      <div class="header-links">
+        <nav aria-label="Primary">
+          <a href="index.html#apple-maps" data-i18n="nav.appleMaps">Apple Maps</a>
+          <a href="index.html#categories" data-i18n="nav.categories">Categories</a>
+          <a href="support.html" data-i18n="nav.support">Support</a>
+          <a href="privacy.html" aria-current="page" data-i18n="nav.privacy">Privacy</a>
+        </nav>
+        <div class="language-switcher" aria-label="Language">
+          <a href="?lang=en" data-lang-option="en">EN</a>
+          <a href="?lang=cz" data-lang-option="cz">CZ</a>
+          <a href="?lang=sk" data-lang-option="sk">SK</a>
+        </div>
+      </div>
     </header>
 
     <main class="page-shell">
       <section class="page-hero map-background">
         <p class="eyebrow">Worldwanderer</p>
-        <h1>Privacy Policy</h1>
-        <p>Effective date: May 24, 2026</p>
+        <h1 data-i18n="privacy.title">Privacy Policy</h1>
+        <p data-i18n="privacy.effectiveDate">Effective date: May 24, 2026</p>
       </section>
 
       <section class="policy-content">
-        <h2>Summary</h2>
-        <p>Worldwanderer does not collect, sell, share, track, or upload personal data. The app has no account system, ads, analytics SDKs, or third-party tracking SDKs.</p>
+        <h2 data-i18n="privacy.summaryTitle">Summary</h2>
+        <p data-i18n="privacy.summaryText">Worldwanderer does not collect, sell, share, track, or upload personal data. The app has no account system, ads, analytics SDKs, or third-party tracking SDKs.</p>
 
-        <h2>App Store privacy label</h2>
-        <p>For App Store Connect privacy details, Worldwanderer's data collection answer is <strong>No Data Collected</strong>. Profile details, saved places, coordinates, notes, travel diary entries, and selected photos remain on your device and are not sent to the developer or to a Worldwanderer server.</p>
+        <h2 data-i18n="privacy.appStoreTitle">App Store privacy label</h2>
+        <p data-i18n="privacy.appStoreText">For App Store Connect privacy details, Worldwanderer's data collection answer is No Data Collected. Profile details, saved places, coordinates, notes, travel diary entries, and selected photos remain on your device and are not sent to the developer or to a Worldwanderer server.</p>
 
-        <h2>Information stored on your device</h2>
-        <p>Worldwanderer lets you save a profile name, landmark names, descriptions, categories, coordinates, visit dates, travel diary entries, and optional photos. This information is stored locally on your device using Apple's app storage. Worldwanderer does not send this information to the developer or to a Worldwanderer server.</p>
+        <h2 data-i18n="privacy.storageTitle">Information stored on your device</h2>
+        <p data-i18n="privacy.storageText">Worldwanderer lets you save a profile name, landmark names, descriptions, categories, coordinates, visit dates, travel diary entries, and optional photos. This information is stored locally on your device using Apple's app storage. Worldwanderer does not send this information to the developer or to a Worldwanderer server.</p>
 
-        <h2>Permissions</h2>
-        <p>Location access is used to show your position on Apple Maps and help create landmarks at your current location. Camera access is used only when you choose to take a photo for your profile, a landmark, or a travel diary entry. Photo library access is used only when you choose an existing photo for your profile, a landmark, or a travel diary entry.</p>
+        <h2 data-i18n="privacy.permissionsTitle">Permissions</h2>
+        <p data-i18n="privacy.permissionsText">Location access is used to show your position on Apple Maps and help create landmarks at your current location. Camera access is used only when you choose to take a photo for your profile, a landmark, or a travel diary entry. Photo library access is used only when you choose an existing photo for your profile, a landmark, or a travel diary entry.</p>
 
-        <h2>Apple services</h2>
-        <p>Worldwanderer uses Apple Maps and standard iOS photo and camera features. Apple may process data needed to provide those operating system services according to Apple's own privacy terms and settings.</p>
+        <h2 data-i18n="privacy.appleTitle">Apple services</h2>
+        <p data-i18n="privacy.appleText">Worldwanderer uses Apple Maps and standard iOS photo and camera features. Apple may process data needed to provide those operating system services according to Apple's own privacy terms and settings.</p>
 
-        <h2>Data deletion</h2>
-        <p>You can delete landmarks inside the app. You can also remove all local Worldwanderer data by deleting the app from your device.</p>
+        <h2 data-i18n="privacy.deletionTitle">Data deletion</h2>
+        <p data-i18n="privacy.deletionText">You can delete landmarks inside the app. You can also remove all local Worldwanderer data by deleting the app from your device.</p>
 
-        <h2>Children's privacy</h2>
-        <p>Worldwanderer is not directed to children and does not knowingly collect personal data from children.</p>
+        <h2 data-i18n="privacy.childrenTitle">Children's privacy</h2>
+        <p data-i18n="privacy.childrenText">Worldwanderer is not directed to children and does not knowingly collect personal data from children.</p>
 
-        <h2>Changes</h2>
-        <p>If Worldwanderer's privacy practices change, this policy will be updated before the change is reflected in the App Store privacy information.</p>
+        <h2 data-i18n="privacy.changesTitle">Changes</h2>
+        <p data-i18n="privacy.changesText">If Worldwanderer's privacy practices change, this policy will be updated before the change is reflected in the App Store privacy information.</p>
 
-        <h2>Contact</h2>
-        <p>For privacy questions, email <a href="mailto:pcesnek290@gmail.com">pcesnek290@gmail.com</a>.</p>
+        <h2 data-i18n="privacy.contactTitle">Contact</h2>
+        <p><span data-i18n="privacy.contactPrefix">For privacy questions, email</span> <a href="mailto:pcesnek290@gmail.com">pcesnek290@gmail.com</a>.</p>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>&copy; 2026 Patrik Cesnek</span>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html" data-i18n="nav.support">Support</a>
+      <a href="privacy.html" data-i18n="common.privacyPolicyTitle">Privacy Policy</a>
     </footer>
+    <script src="assets/i18n.js"></script>
   </body>
 </html>
