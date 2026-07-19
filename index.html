@@ -3,11 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Worldwanderer is an iPhone app for saving personal landmarks with photos, categories, notes, coordinates, and Apple Maps navigation.">
-    <title>Worldwanderer | Personal Landmarks on iPhone</title>
+    <meta name="description" content="Save places that matter — landmarks with photos, notes, categories and coordinates on Apple Maps. Private travel diary for iPhone. No accounts, ads, or tracking.">
+    <title>Worldwanderer — Private Travel Map & Diary App for iPhone</title>
+    <link rel="canonical" href="https://worldwanderer-web.netlify.app/">
+    <link rel="alternate" hreflang="en" href="https://worldwanderer-web.netlify.app/">
+    <link rel="alternate" hreflang="cs" href="https://worldwanderer-web.netlify.app/?lang=cz">
+    <link rel="alternate" hreflang="sk" href="https://worldwanderer-web.netlify.app/?lang=sk">
+    <link rel="alternate" hreflang="x-default" href="https://worldwanderer-web.netlify.app/">
+    <meta name="apple-itunes-app" content="app-id=6772739029">
+    <meta name="theme-color" content="#090b0a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Worldwanderer">
+    <meta property="og:title" content="Worldwanderer — Private Travel Map & Diary App for iPhone">
+    <meta property="og:description" content="Save places that matter — landmarks with photos, notes, categories and coordinates on Apple Maps. No accounts, ads, or tracking.">
+    <meta property="og:url" content="https://worldwanderer-web.netlify.app/">
+    <meta property="og:image" content="https://worldwanderer-web.netlify.app/assets/worldwanderer-home.jpg">
+    <meta property="og:image:alt" content="Worldwanderer app showing the My places screen on iPhone">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Worldwanderer — Private Travel Map & Diary App for iPhone">
+    <meta name="twitter:description" content="Save places that matter — landmarks with photos, notes, categories and coordinates on Apple Maps. No accounts, ads, or tracking.">
+    <meta name="twitter:image" content="https://worldwanderer-web.netlify.app/assets/worldwanderer-home.jpg">
     <link rel="icon" href="assets/app-icon.png">
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Worldwanderer",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "description": "Worldwanderer is a private travel companion for iPhone. Save landmarks with photos, notes, categories, colors, and precise coordinates, view them on Apple Maps, keep a travel diary, and earn achievements. No accounts, no ads, no tracking — everything stays on your device.",
+      "url": "https://worldwanderer-web.netlify.app/",
+      "installUrl": "https://apps.apple.com/app/id6772739029",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Person", "name": "Patrik Cesnek" },
+      "image": "https://worldwanderer-web.netlify.app/assets/app-icon.png",
+      "screenshot": [
+        "https://worldwanderer-web.netlify.app/assets/worldwanderer-home.jpg",
+        "https://worldwanderer-web.netlify.app/assets/worldwanderer-map.jpg"
+      ],
+      "inLanguage": ["en", "cs", "sk"]
+    }
+    </script>
   </head>
   <body data-page="home">
     <svg class="icon-sprite" aria-hidden="true">
@@ -20,6 +58,8 @@
       <symbol id="icon-shop" viewBox="0 0 24 24"><path d="M6 9h12l-1 12H7L6 9z"/><path d="M9 9a3 3 0 0 1 6 0"/></symbol>
       <symbol id="icon-music" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></symbol>
       <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-13a7 7 0 0 0-14 0c0 6.8 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+      <symbol id="icon-tree" viewBox="0 0 24 24"><path d="M12 3L7 10h3l-4 6h12l-4-6h3L12 3z"/><path d="M12 16v5M8 21h8"/></symbol>
+      <symbol id="icon-scroll" viewBox="0 0 24 24"><path d="M8 4h9a2 2 0 0 1 2 2v11"/><path d="M8 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h9a2 2 0 0 0 2-2"/><path d="M8 4H6a2 2 0 0 0-2 2v1h4"/><path d="M12 9h4M12 13h4"/></symbol>
     </svg>
 
     <header class="site-header">
@@ -49,8 +89,8 @@
           <h1>Worldwanderer</h1>
           <p class="lede" data-i18n="home.heroLede">Save places worth returning to with photos, notes, category colors, precise coordinates, and Apple Maps navigation.</p>
           <div class="hero-actions" aria-label="Worldwanderer links">
-            <a class="button primary" href="support.html" data-i18n="common.getSupport">Get support</a>
-            <a class="button secondary" href="privacy.html" data-i18n="common.privacyPolicy">Privacy policy</a>
+            <a class="button primary" href="https://apps.apple.com/app/id6772739029" data-i18n="common.download">Download on the App Store</a>
+            <a class="button secondary" href="support.html" data-i18n="common.getSupport">Get support</a>
           </div>
           <div class="hero-meta" aria-label="Worldwanderer highlights">
             <span>Apple Maps</span>
@@ -60,7 +100,7 @@
         </div>
         <div class="device-stage" aria-label="Worldwanderer iPhone screen previews">
           <div class="phone-shot home-shot">
-            <img src="assets/worldwanderer-home.jpg" alt="Worldwanderer My places iPhone screen" width="720" height="1564">
+            <img src="assets/worldwanderer-home.jpg" alt="Worldwanderer My places iPhone screen" width="720" height="1564" fetchpriority="high">
           </div>
           <div class="phone-shot map-shot">
             <img src="assets/worldwanderer-map.jpg" alt="Worldwanderer Apple Maps iPhone screen" width="720" height="1564">
@@ -76,7 +116,7 @@
         </div>
         <div class="maps-proof">
           <div class="phone-shot proof-shot">
-            <img src="assets/worldwanderer-map.jpg" alt="Apple Maps with Worldwanderer category annotations" width="720" height="1564">
+            <img src="assets/worldwanderer-map.jpg" alt="Apple Maps with Worldwanderer category annotations" width="720" height="1564" loading="lazy" decoding="async">
           </div>
         </div>
       </section>
@@ -89,19 +129,19 @@
         <div class="screen-grid">
           <article class="screen-card">
             <div class="phone-shot mini-shot">
-              <img src="assets/worldwanderer-diary.jpg" alt="Worldwanderer Travel Diary iPhone screen" width="720" height="1564">
+              <img src="assets/worldwanderer-diary.jpg" alt="Worldwanderer Travel Diary iPhone screen" width="720" height="1564" loading="lazy" decoding="async">
             </div>
             <strong data-i18n="screens.diary">Travel Diary</strong>
           </article>
           <article class="screen-card">
             <div class="phone-shot mini-shot">
-              <img src="assets/worldwanderer-profile.jpg" alt="Worldwanderer Profile iPhone screen" width="720" height="1564">
+              <img src="assets/worldwanderer-profile.jpg" alt="Worldwanderer Profile iPhone screen" width="720" height="1564" loading="lazy" decoding="async">
             </div>
             <strong data-i18n="screens.profile">Profile</strong>
           </article>
           <article class="screen-card">
             <div class="phone-shot mini-shot">
-              <img src="assets/worldwanderer-achievements.jpg" alt="Worldwanderer Achievements iPhone screen" width="720" height="1564">
+              <img src="assets/worldwanderer-achievements.jpg" alt="Worldwanderer Achievements iPhone screen" width="720" height="1564" loading="lazy" decoding="async">
             </div>
             <strong data-i18n="screens.achievements">Achievements</strong>
           </article>
@@ -118,7 +158,9 @@
           <article class="category-card all"><span class="sf-badge" aria-label="mappin.circle.fill"><svg><use href="#icon-pin"></use></svg></span><strong data-i18n="categories.all">All</strong></article>
           <article class="category-card lakes"><span class="sf-badge" aria-label="water.waves"><svg><use href="#icon-water"></use></svg></span><strong data-i18n="categories.lakes">Lakes</strong></article>
           <article class="category-card hills"><span class="sf-badge" aria-label="mountain.2.fill"><svg><use href="#icon-mountain"></use></svg></span><strong data-i18n="categories.hills">Hills</strong></article>
+          <article class="category-card parks"><span class="sf-badge" aria-label="tree.fill"><svg><use href="#icon-tree"></use></svg></span><strong data-i18n="categories.parks">Parks</strong></article>
           <article class="category-card castles"><span class="sf-badge" aria-label="building.columns.fill"><svg><use href="#icon-castle"></use></svg></span><strong data-i18n="categories.castles">Castles</strong></article>
+          <article class="category-card historical"><span class="sf-badge" aria-label="scroll.fill"><svg><use href="#icon-scroll"></use></svg></span><strong data-i18n="categories.historical">Historical landmarks</strong></article>
           <article class="category-card lookouts"><span class="sf-badge" aria-label="binoculars.fill"><svg><use href="#icon-lookout"></use></svg></span><strong data-i18n="categories.lookouts">Lookouts</strong></article>
           <article class="category-card restaurants"><span class="sf-badge" aria-label="fork.knife.circle.fill"><svg><use href="#icon-restaurant"></use></svg></span><strong data-i18n="categories.restaurants">Restaurants</strong></article>
           <article class="category-card bars"><span class="sf-badge" aria-label="wineglass.fill"><svg><use href="#icon-bar"></use></svg></span><strong data-i18n="categories.bars">Bars</strong></article>
@@ -136,9 +178,9 @@
           <p data-i18n="home.iconsText">The website uses the standard, dark, and tinted Worldwanderer app icons from the app's asset catalog.</p>
         </div>
         <div class="icon-showcase">
-          <img src="assets/app-icon.png" alt="Worldwanderer app icon">
-          <img src="assets/app-icon-dark.png" alt="Worldwanderer dark app icon">
-          <img src="assets/app-icon-tinted.png" alt="Worldwanderer tinted app icon">
+          <img src="assets/app-icon.png" alt="Worldwanderer app icon" loading="lazy" decoding="async">
+          <img src="assets/app-icon-dark.png" alt="Worldwanderer dark app icon" loading="lazy" decoding="async">
+          <img src="assets/app-icon-tinted.png" alt="Worldwanderer tinted app icon" loading="lazy" decoding="async">
         </div>
       </section>
 
@@ -172,6 +214,7 @@
 
     <footer class="site-footer">
       <span>&copy; 2026 Patrik Cesnek</span>
+      <a href="https://apps.apple.com/app/id6772739029" data-i18n="common.download">Download on the App Store</a>
       <a href="support.html" data-i18n="nav.support">Support</a>
       <a href="privacy.html" data-i18n="common.privacyPolicyTitle">Privacy Policy</a>
     </footer>

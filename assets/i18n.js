@@ -4,16 +4,16 @@
       htmlLang: "en",
       meta: {
         home: {
-          title: "Worldwanderer | Personal Landmarks on iPhone",
-          description: "Worldwanderer is an iPhone app for saving personal landmarks with photos, categories, notes, coordinates, and Apple Maps navigation."
+          title: "Worldwanderer — Private Travel Map & Diary App for iPhone",
+          description: "Save places that matter — landmarks with photos, notes, categories and coordinates on Apple Maps. Private travel diary for iPhone. No accounts, ads, or tracking."
         },
         support: {
           title: "Support | Worldwanderer",
-          description: "Support page for Worldwanderer."
+          description: "Get help with Worldwanderer, the private travel map and diary app for iPhone. Contact support and find answers to common questions."
         },
         privacy: {
           title: "Privacy Policy | Worldwanderer",
-          description: "Privacy Policy for Worldwanderer."
+          description: "How Worldwanderer protects your data: landmarks, photos, and notes stay on your iPhone — no accounts, no ads, no analytics, no tracking."
         }
       },
       t: {
@@ -26,6 +26,7 @@
         "common.privacyPolicyTitle": "Privacy Policy",
         "common.localStorage": "Local storage",
         "common.noTracking": "No tracking",
+        "common.download": "Download on the App Store",
         "home.heroEyebrow": "iPhone app",
         "home.heroLede": "Save places worth returning to with photos, notes, category colors, precise coordinates, and Apple Maps navigation.",
         "home.mapsEyebrow": "Apple Maps built in",
@@ -42,7 +43,9 @@
         "categories.all": "All",
         "categories.lakes": "Lakes",
         "categories.hills": "Hills",
+        "categories.parks": "Parks",
         "categories.castles": "Castles",
+        "categories.historical": "Historical landmarks",
         "categories.lookouts": "Lookouts",
         "categories.restaurants": "Restaurants",
         "categories.bars": "Bars",
@@ -103,16 +106,16 @@
       htmlLang: "cs",
       meta: {
         home: {
-          title: "Worldwanderer | Osobní místa v iPhonu",
-          description: "Worldwanderer je aplikace pro iPhone na ukládání osobních míst s fotkami, kategoriemi, poznámkami, souřadnicemi a navigací v Apple Maps."
+          title: "Worldwanderer — Soukromá cestovní mapa a deník pro iPhone",
+          description: "Ukládejte místa, na kterých záleží — s fotkami, poznámkami, kategoriemi a souřadnicemi v Apple Maps. Soukromý cestovní deník pro iPhone. Bez účtů, reklam a sledování."
         },
         support: {
           title: "Podpora | Worldwanderer",
-          description: "Stránka podpory pro Worldwanderer."
+          description: "Pomoc s aplikací Worldwanderer, soukromou cestovní mapou a deníkem pro iPhone. Kontakt na podporu a odpovědi na časté otázky."
         },
         privacy: {
           title: "Zásady soukromí | Worldwanderer",
-          description: "Zásady soukromí pro Worldwanderer."
+          description: "Jak Worldwanderer chrání vaše data: místa, fotky i poznámky zůstávají ve vašem iPhonu — bez účtů, reklam, analytiky a sledování."
         }
       },
       t: {
@@ -125,6 +128,7 @@
         "common.privacyPolicyTitle": "Zásady soukromí",
         "common.localStorage": "Lokální uložení",
         "common.noTracking": "Bez sledování",
+        "common.download": "Stáhnout v App Storu",
         "home.heroEyebrow": "Aplikace pro iPhone",
         "home.heroLede": "Ukládejte si místa, ke kterým se chcete vracet, s fotkami, poznámkami, barevnými kategoriemi, přesnými souřadnicemi a navigací v Apple Maps.",
         "home.mapsEyebrow": "Apple Maps přímo v aplikaci",
@@ -141,7 +145,9 @@
         "categories.all": "Vše",
         "categories.lakes": "Jezera",
         "categories.hills": "Kopce",
+        "categories.parks": "Parky",
         "categories.castles": "Hrady",
+        "categories.historical": "Historické památky",
         "categories.lookouts": "Vyhlídky",
         "categories.restaurants": "Restaurace",
         "categories.bars": "Bary",
@@ -202,16 +208,16 @@
       htmlLang: "sk",
       meta: {
         home: {
-          title: "Worldwanderer | Osobné miesta v iPhone",
-          description: "Worldwanderer je aplikácia pre iPhone na ukladanie osobných miest s fotkami, kategóriami, poznámkami, súradnicami a navigáciou v Apple Maps."
+          title: "Worldwanderer — Súkromná cestovná mapa a denník pre iPhone",
+          description: "Ukladajte miesta, na ktorých záleží — s fotkami, poznámkami, kategóriami a súradnicami v Apple Maps. Súkromný cestovný denník pre iPhone. Bez účtov, reklám a sledovania."
         },
         support: {
           title: "Podpora | Worldwanderer",
-          description: "Stránka podpory pre Worldwanderer."
+          description: "Pomoc s aplikáciou Worldwanderer, súkromnou cestovnou mapou a denníkom pre iPhone. Kontakt na podporu a odpovede na časté otázky."
         },
         privacy: {
           title: "Zásady súkromia | Worldwanderer",
-          description: "Zásady súkromia pre Worldwanderer."
+          description: "Ako Worldwanderer chráni vaše dáta: miesta, fotky aj poznámky zostávajú vo vašom iPhone — bez účtov, reklám, analytiky a sledovania."
         }
       },
       t: {
@@ -224,6 +230,7 @@
         "common.privacyPolicyTitle": "Zásady súkromia",
         "common.localStorage": "Lokálne uloženie",
         "common.noTracking": "Bez sledovania",
+        "common.download": "Stiahnuť v App Store",
         "home.heroEyebrow": "Aplikácia pre iPhone",
         "home.heroLede": "Ukladajte si miesta, ku ktorým sa chcete vracať, s fotkami, poznámkami, farebnými kategóriami, presnými súradnicami a navigáciou v Apple Maps.",
         "home.mapsEyebrow": "Apple Maps priamo v aplikácii",
@@ -240,7 +247,9 @@
         "categories.all": "Všetko",
         "categories.lakes": "Jazerá",
         "categories.hills": "Kopce",
+        "categories.parks": "Parky",
         "categories.castles": "Hrady",
+        "categories.historical": "Historické pamiatky",
         "categories.lookouts": "Vyhliadky",
         "categories.restaurants": "Reštaurácie",
         "categories.bars": "Bary",
