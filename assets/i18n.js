@@ -5,7 +5,7 @@
       meta: {
         home: {
           title: "Worldwanderer — Private Travel Map & Diary App for iPhone",
-          description: "Save places that matter — landmarks with photos, notes, categories and coordinates on Apple Maps. Private travel diary for iPhone. No accounts, ads, or tracking."
+          description: "Save places that matter on Apple Maps, see every country you visit light up on a world map, find places in your photos and share your travels. Private travel diary for iPhone. No accounts, ads, or tracking."
         },
         support: {
           title: "Support | Worldwanderer",
@@ -21,6 +21,7 @@
         "nav.categories": "Categories",
         "nav.support": "Support",
         "nav.privacy": "Privacy",
+        "nav.whatsNew": "What's new",
         "common.getSupport": "Get support",
         "common.privacyPolicy": "Privacy policy",
         "common.privacyPolicyTitle": "Privacy Policy",
@@ -81,7 +82,7 @@
         "support.privacyTextPrefix": "Worldwanderer does not use accounts, ads, analytics, or tracking. Read the",
         "support.privacyTextSuffix": " for details.",
         "privacy.title": "Privacy Policy",
-        "privacy.effectiveDate": "Effective date: May 24, 2026",
+        "privacy.effectiveDate": "Effective date: October 7, 2026",
         "privacy.summaryTitle": "Summary",
         "privacy.summaryText": "Worldwanderer does not collect, sell, share, track, or upload personal data. The app has no account system, ads, analytics SDKs, or third-party tracking SDKs.",
         "privacy.appStoreTitle": "App Store privacy label",
@@ -89,7 +90,7 @@
         "privacy.storageTitle": "Information stored on your device",
         "privacy.storageText": "Worldwanderer lets you save a profile name, landmark names, descriptions, categories, coordinates, visit dates, travel diary entries, and optional photos. This information is stored locally on your device using Apple's app storage. Worldwanderer does not send this information to the developer or to a Worldwanderer server.",
         "privacy.permissionsTitle": "Permissions",
-        "privacy.permissionsText": "Location access is used to show your position on Apple Maps and help create landmarks at your current location. Camera access is used only when you choose to take a photo for your profile, a landmark, or a travel diary entry. Photo library access is used only when you choose an existing photo for your profile, a landmark, or a travel diary entry.",
+        "privacy.permissionsText": "Location access is used to show your position on Apple Maps, help create landmarks at your current location, and mark wishlist places as visited when you open the app there. Worldwanderer asks for it during onboarding or when you first open the map, never on its own at launch. Camera access is used only when you choose to take a photo for your profile, a landmark, or a travel diary entry. Photo library access is used when you choose an existing photo, and when you ask Worldwanderer to find places in your photos: the locations of your photos are read and grouped on your iPhone and are never uploaded. Imported photos are saved without location metadata.",
         "privacy.appleTitle": "Apple services",
         "privacy.appleText": "Worldwanderer uses Apple Maps and standard iOS photo and camera features. Apple may process data needed to provide those operating system services according to Apple's own privacy terms and settings.",
         "privacy.deletionTitle": "Data deletion",
@@ -99,7 +100,30 @@
         "privacy.changesTitle": "Changes",
         "privacy.changesText": "If Worldwanderer's privacy practices change, this policy will be updated before the change is reflected in the App Store privacy information.",
         "privacy.contactTitle": "Contact",
-        "privacy.contactPrefix": "For privacy questions, email"
+        "privacy.contactPrefix": "For privacy questions, email",
+        "new.eyebrow": "New in version 1.2",
+        "new.title": "The biggest Worldwanderer update yet.",
+        "new.text": "See your world fill in, turn your camera roll into saved places, and share where you have been. Now runs on iOS 18 and later.",
+        "new.worldTitle": "Your world",
+        "new.worldText": "Every country you visit lights up on a world map, with continent progress and flags. Works offline.",
+        "new.photosTitle": "Find places in your photos",
+        "new.photosText": "Worldwanderer suggests places from where your photos were taken. The scan runs on your iPhone and nothing is saved until you confirm.",
+        "new.shareTitle": "Share cards",
+        "new.shareText": "Share beautiful cards of your places, trips, badges and world map. Cards show the country, never coordinates or photo location data.",
+        "new.badgesTitle": "Badge unlock moments",
+        "new.badgesText": "Badges now celebrate the moment you unlock them, and Home shows the one you are closest to next.",
+        "new.tripsTitle": "Places on your trips",
+        "new.tripsText": "Connect places to your trips and see the route on a map, with places from the trip dates suggested first.",
+        "new.yearTitle": "Year in review",
+        "new.yearText": "Your year of exploring at a glance: places, new countries, your busiest month, longest trip and badges, ending in a shareable card.",
+        "new.wishlistTitle": "Wishlist",
+        "new.wishlistText": "Save places you want to visit. Check them off yourself, or let Worldwanderer mark them visited when you open the app there.",
+        "new.searchTitle": "Place search",
+        "new.searchText": "Search a place by name to fill in its coordinates, or keep entering latitude and longitude by hand for spots off the map.",
+        "support.importTitle": "Find places in your photos",
+        "support.importText": "Worldwanderer can only suggest places from photos that have location data and that you have given it access to. If you allowed limited access, add more photos in iOS Settings > Worldwanderer > Photos. Places you already saved and spots you photograph almost every day, like home or work, are skipped.",
+        "privacy.shareTitle": "Share cards",
+        "privacy.shareText": "Share cards are created on your device and are only shared when you choose to send them. They show a place's country, never its coordinates, and all photo metadata, including location, is removed from the image."
       }
     },
     cz: {
@@ -107,7 +131,7 @@
       meta: {
         home: {
           title: "Worldwanderer — Soukromá cestovní mapa a deník pro iPhone",
-          description: "Ukládejte místa, na kterých záleží — s fotkami, poznámkami, kategoriemi a souřadnicemi v Apple Maps. Soukromý cestovní deník pro iPhone. Bez účtů, reklam a sledování."
+          description: "Ukládejte místa, na kterých záleží, v Apple Maps, sledujte, jak se navštívené země rozsvěcují na mapě světa, najděte místa ve fotkách a sdílejte své cesty. Soukromý cestovní deník pro iPhone. Bez účtů, reklam a sledování."
         },
         support: {
           title: "Podpora | Worldwanderer",
@@ -123,6 +147,7 @@
         "nav.categories": "Kategorie",
         "nav.support": "Podpora",
         "nav.privacy": "Soukromí",
+        "nav.whatsNew": "Novinky",
         "common.getSupport": "Podpora",
         "common.privacyPolicy": "Zásady soukromí",
         "common.privacyPolicyTitle": "Zásady soukromí",
@@ -183,7 +208,7 @@
         "support.privacyTextPrefix": "Worldwanderer nepoužívá účty, reklamy, analytiku ani sledování. Podrobnosti najdete v dokumentu",
         "support.privacyTextSuffix": ".",
         "privacy.title": "Zásady soukromí",
-        "privacy.effectiveDate": "Datum účinnosti: 24. května 2026",
+        "privacy.effectiveDate": "Datum účinnosti: 7. října 2026",
         "privacy.summaryTitle": "Shrnutí",
         "privacy.summaryText": "Worldwanderer nesbírá, neprodává, nesdílí, nesleduje ani nenahrává osobní data. Aplikace nemá účty, reklamy, analytické SDK ani SDK pro sledování třetích stran.",
         "privacy.appStoreTitle": "Štítek soukromí v App Storu",
@@ -191,7 +216,7 @@
         "privacy.storageTitle": "Informace uložené v zařízení",
         "privacy.storageText": "Worldwanderer umožňuje uložit jméno profilu, názvy míst, popisy, kategorie, souřadnice, data návštěv, záznamy cestovního deníku a volitelné fotky. Tyto informace jsou uložené lokálně v zařízení pomocí úložiště aplikací od Applu. Worldwanderer je neposílá vývojáři ani na server Worldwanderer.",
         "privacy.permissionsTitle": "Oprávnění",
-        "privacy.permissionsText": "Přístup k poloze se používá k zobrazení vaší pozice v Apple Maps a k vytváření míst na aktuální poloze. Přístup k fotoaparátu se používá jen tehdy, když se rozhodnete pořídit fotku pro profil, místo nebo záznam v deníku. Přístup ke knihovně fotek se používá jen tehdy, když vyberete existující fotku.",
+        "privacy.permissionsText": "Přístup k poloze se používá k zobrazení vaší pozice v Apple Maps, k vytváření míst na aktuální poloze a k označení míst ze seznamu přání jako navštívených, když aplikaci otevřete na místě. Worldwanderer o něj žádá při úvodním průvodci nebo při prvním otevření mapy, nikdy sám po spuštění. Přístup k fotoaparátu se používá jen tehdy, když se rozhodnete pořídit fotku pro profil, místo nebo záznam v deníku. Přístup ke knihovně fotek se používá, když vyberete existující fotku, a když necháte Worldwanderer hledat místa ve fotkách: polohy fotek se čtou a seskupují ve vašem iPhonu a nikdy se nikam nenahrávají. Importované fotky se ukládají bez údajů o poloze.",
         "privacy.appleTitle": "Služby Apple",
         "privacy.appleText": "Worldwanderer používá Apple Maps a standardní funkce iOS pro fotky a fotoaparát. Apple může zpracovávat data potřebná k poskytování těchto systémových služeb podle vlastních podmínek a nastavení soukromí.",
         "privacy.deletionTitle": "Smazání dat",
@@ -201,7 +226,30 @@
         "privacy.changesTitle": "Změny",
         "privacy.changesText": "Pokud se postupy Worldwanderer v oblasti soukromí změní, tyto zásady budou aktualizovány před tím, než se změna projeví v informacích o soukromí v App Storu.",
         "privacy.contactTitle": "Kontakt",
-        "privacy.contactPrefix": "S dotazy k soukromí napište na"
+        "privacy.contactPrefix": "S dotazy k soukromí napište na",
+        "new.eyebrow": "Novinky ve verzi 1.2",
+        "new.title": "Největší aktualizace Worldwanderer.",
+        "new.text": "Sledujte, jak se zaplňuje váš svět, proměňte fotky v uložená místa a sdílejte, kde jste byli. Nově funguje na iOS 18 a novějším.",
+        "new.worldTitle": "Váš svět",
+        "new.worldText": "Každá navštívená země se rozsvítí na mapě světa, s pokrokem po kontinentech a vlajkami. Funguje i offline.",
+        "new.photosTitle": "Najděte místa ve fotkách",
+        "new.photosText": "Worldwanderer navrhne místa podle toho, kde byly vaše fotky pořízeny. Vše probíhá přímo ve vašem iPhonu a nic se neuloží, dokud to nepotvrdíte.",
+        "new.shareTitle": "Karty ke sdílení",
+        "new.shareText": "Sdílejte pěkné karty míst, výletů, odznaků a mapy světa. Karty ukazují zemi, nikdy souřadnice ani polohu z fotek.",
+        "new.badgesTitle": "Oslava odznaků",
+        "new.badgesText": "Odznaky teď oslavují chvíli, kdy je odemknete, a na úvodní obrazovce uvidíte ten, ke kterému máte nejblíž.",
+        "new.tripsTitle": "Místa na výletech",
+        "new.tripsText": "Propojte místa s výlety a podívejte se na trasu na mapě. Místa z dnů výletu se nabídnou jako první.",
+        "new.yearTitle": "Rok v kostce",
+        "new.yearText": "Váš rok objevování na jednom místě: místa, nové země, nejrušnější měsíc, nejdelší výlet a odznaky, zakončené kartou ke sdílení.",
+        "new.wishlistTitle": "Seznam přání",
+        "new.wishlistText": "Ukládejte si místa, která chcete navštívit. Odškrtněte je sami, nebo je Worldwanderer označí jako navštívená, když aplikaci otevřete na místě.",
+        "new.searchTitle": "Vyhledávání míst",
+        "new.searchText": "Vyhledejte místo podle názvu a souřadnice se vyplní samy. Pro místa mimo mapu můžete šířku a délku dál zadat ručně.",
+        "support.importTitle": "Hledání míst ve fotkách",
+        "support.importText": "Worldwanderer umí navrhnout místa jen z fotek, které obsahují polohu a ke kterým má přístup. Pokud jste povolili omezený přístup, přidejte další fotky v Nastavení iOS > Worldwanderer > Fotky. Už uložená místa a místa, která fotíte téměř denně, jako domov nebo práce, se přeskočí.",
+        "privacy.shareTitle": "Karty ke sdílení",
+        "privacy.shareText": "Karty ke sdílení se vytvářejí ve vašem zařízení a sdílí se jen tehdy, když se je rozhodnete odeslat. Ukazují zemi místa, nikdy jeho souřadnice, a z obrázku se odstraní všechna metadata fotek včetně polohy."
       }
     },
     sk: {
@@ -209,7 +257,7 @@
       meta: {
         home: {
           title: "Worldwanderer — Súkromná cestovná mapa a denník pre iPhone",
-          description: "Ukladajte miesta, na ktorých záleží — s fotkami, poznámkami, kategóriami a súradnicami v Apple Maps. Súkromný cestovný denník pre iPhone. Bez účtov, reklám a sledovania."
+          description: "Ukladajte miesta, na ktorých záleží, v Apple Maps, sledujte, ako sa navštívené krajiny rozsvecujú na mape sveta, nájdite miesta vo fotkách a zdieľajte svoje cesty. Súkromný cestovný denník pre iPhone. Bez účtov, reklám a sledovania."
         },
         support: {
           title: "Podpora | Worldwanderer",
@@ -225,6 +273,7 @@
         "nav.categories": "Kategórie",
         "nav.support": "Podpora",
         "nav.privacy": "Súkromie",
+        "nav.whatsNew": "Novinky",
         "common.getSupport": "Podpora",
         "common.privacyPolicy": "Zásady súkromia",
         "common.privacyPolicyTitle": "Zásady súkromia",
@@ -285,7 +334,7 @@
         "support.privacyTextPrefix": "Worldwanderer nepoužíva účty, reklamy, analytiku ani sledovanie. Podrobnosti nájdete v dokumente",
         "support.privacyTextSuffix": ".",
         "privacy.title": "Zásady súkromia",
-        "privacy.effectiveDate": "Dátum účinnosti: 24. mája 2026",
+        "privacy.effectiveDate": "Dátum účinnosti: 7. októbra 2026",
         "privacy.summaryTitle": "Zhrnutie",
         "privacy.summaryText": "Worldwanderer nezbiera, nepredáva, nezdieľa, nesleduje ani nenahráva osobné dáta. Aplikácia nemá účty, reklamy, analytické SDK ani SDK na sledovanie tretích strán.",
         "privacy.appStoreTitle": "Štítok súkromia v App Store",
@@ -293,7 +342,7 @@
         "privacy.storageTitle": "Informácie uložené v zariadení",
         "privacy.storageText": "Worldwanderer umožňuje uložiť meno profilu, názvy miest, opisy, kategórie, súradnice, dátumy návštev, záznamy cestovného denníka a voliteľné fotky. Tieto informácie sú uložené lokálne v zariadení pomocou úložiska aplikácií od Applu. Worldwanderer ich neposiela vývojárovi ani na server Worldwanderer.",
         "privacy.permissionsTitle": "Oprávnenia",
-        "privacy.permissionsText": "Prístup k polohe sa používa na zobrazenie vašej pozície v Apple Maps a na vytváranie miest na aktuálnej polohe. Prístup k fotoaparátu sa používa len vtedy, keď sa rozhodnete odfotiť profil, miesto alebo záznam v denníku. Prístup ku knižnici fotiek sa používa len vtedy, keď vyberiete existujúcu fotku.",
+        "privacy.permissionsText": "Prístup k polohe sa používa na zobrazenie vašej pozície v Apple Maps, na vytváranie miest na aktuálnej polohe a na označenie miest zo zoznamu želaní ako navštívených, keď aplikáciu otvoríte na mieste. Worldwanderer oň žiada pri úvodnom sprievodcovi alebo pri prvom otvorení mapy, nikdy sám po spustení. Prístup k fotoaparátu sa používa len vtedy, keď sa rozhodnete odfotiť profil, miesto alebo záznam v denníku. Prístup ku knižnici fotiek sa používa, keď vyberiete existujúcu fotku, a keď necháte Worldwanderer hľadať miesta vo fotkách: polohy fotiek sa čítajú a zoskupujú vo vašom iPhone a nikdy sa nikam nenahrávajú. Importované fotky sa ukladajú bez údajov o polohe.",
         "privacy.appleTitle": "Služby Apple",
         "privacy.appleText": "Worldwanderer používa Apple Maps a štandardné funkcie iOS pre fotky a fotoaparát. Apple môže spracúvať dáta potrebné na poskytovanie týchto systémových služieb podľa vlastných podmienok a nastavení súkromia.",
         "privacy.deletionTitle": "Vymazanie dát",
@@ -303,7 +352,30 @@
         "privacy.changesTitle": "Zmeny",
         "privacy.changesText": "Ak sa postupy Worldwanderer v oblasti súkromia zmenia, tieto zásady budú aktualizované predtým, než sa zmena prejaví v informáciách o súkromí v App Store.",
         "privacy.contactTitle": "Kontakt",
-        "privacy.contactPrefix": "S otázkami k súkromiu napíšte na"
+        "privacy.contactPrefix": "S otázkami k súkromiu napíšte na",
+        "new.eyebrow": "Novinky vo verzii 1.2",
+        "new.title": "Najväčšia aktualizácia Worldwanderer.",
+        "new.text": "Sledujte, ako sa zapĺňa váš svet, premeňte fotky na uložené miesta a zdieľajte, kde ste boli. Po novom funguje na iOS 18 a novšom.",
+        "new.worldTitle": "Váš svet",
+        "new.worldText": "Každá navštívená krajina sa rozsvieti na mape sveta, s pokrokom po kontinentoch a vlajkami. Funguje aj offline.",
+        "new.photosTitle": "Nájdite miesta vo fotkách",
+        "new.photosText": "Worldwanderer navrhne miesta podľa toho, kde boli vaše fotky odfotené. Všetko prebieha priamo vo vašom iPhone a nič sa neuloží, kým to nepotvrdíte.",
+        "new.shareTitle": "Karty na zdieľanie",
+        "new.shareText": "Zdieľajte pekné karty miest, výletov, odznakov a mapy sveta. Karty ukazujú krajinu, nikdy súradnice ani polohu z fotiek.",
+        "new.badgesTitle": "Oslava odznakov",
+        "new.badgesText": "Odznaky teraz oslavujú chvíľu, keď ich odomknete, a na úvodnej obrazovke uvidíte ten, ku ktorému máte najbližšie.",
+        "new.tripsTitle": "Miesta na výletoch",
+        "new.tripsText": "Prepojte miesta s výletmi a pozrite si trasu na mape. Miesta z dní výletu sa ponúknu ako prvé.",
+        "new.yearTitle": "Rok v kocke",
+        "new.yearText": "Váš rok objavovania na jednom mieste: miesta, nové krajiny, najrušnejší mesiac, najdlhší výlet a odznaky, zakončené kartou na zdieľanie.",
+        "new.wishlistTitle": "Zoznam želaní",
+        "new.wishlistText": "Ukladajte si miesta, ktoré chcete navštíviť. Odškrtnite ich sami, alebo ich Worldwanderer označí ako navštívené, keď aplikáciu otvoríte na mieste.",
+        "new.searchTitle": "Vyhľadávanie miest",
+        "new.searchText": "Vyhľadajte miesto podľa názvu a súradnice sa vyplnia samé. Pre miesta mimo mapy môžete šírku a dĺžku naďalej zadať ručne.",
+        "support.importTitle": "Hľadanie miest vo fotkách",
+        "support.importText": "Worldwanderer vie navrhnúť miesta len z fotiek, ktoré obsahujú polohu a ku ktorým má prístup. Ak ste povolili obmedzený prístup, pridajte ďalšie fotky v Nastaveniach iOS > Worldwanderer > Fotky. Už uložené miesta a miesta, ktoré fotíte takmer denne, ako domov alebo práca, sa preskočia.",
+        "privacy.shareTitle": "Karty na zdieľanie",
+        "privacy.shareText": "Karty na zdieľanie sa vytvárajú vo vašom zariadení a zdieľajú sa len vtedy, keď sa ich rozhodnete odoslať. Ukazujú krajinu miesta, nikdy jeho súradnice, a z obrázka sa odstránia všetky metadáta fotiek vrátane polohy."
       }
     }
   };

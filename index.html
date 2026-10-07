@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Save places that matter — landmarks with photos, notes, categories and coordinates on Apple Maps. Private travel diary for iPhone. No accounts, ads, or tracking.">
+    <meta name="description" content="Save places that matter on Apple Maps, see every country you visit light up on a world map, find places in your photos and share your travels. Private travel diary for iPhone. No accounts, ads, or tracking.">
     <title>Worldwanderer — Private Travel Map & Diary App for iPhone</title>
     <link rel="canonical" href="https://worldwanderer-web.netlify.app/">
     <link rel="alternate" hreflang="en" href="https://worldwanderer-web.netlify.app/">
@@ -33,7 +33,7 @@
       "name": "Worldwanderer",
       "operatingSystem": "iOS",
       "applicationCategory": "TravelApplication",
-      "description": "Worldwanderer is a private travel companion for iPhone. Save landmarks with photos, notes, categories, colors, and precise coordinates, view them on Apple Maps, keep a travel diary, and earn achievements. No accounts, no ads, no tracking — everything stays on your device.",
+      "description": "Worldwanderer is a private travel companion for iPhone. Save landmarks with photos, notes, categories, colors, and precise coordinates, view them on Apple Maps, keep a travel diary, and connect places to trips, see visited countries on a world map, find places in your photos on device, share cards and earn achievements. No accounts, no ads, no tracking — everything stays on your device.",
       "url": "https://worldwanderer-web.netlify.app/",
       "installUrl": "https://apps.apple.com/app/id6772739029",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -43,6 +43,7 @@
         "https://worldwanderer-web.netlify.app/assets/worldwanderer-home.jpg",
         "https://worldwanderer-web.netlify.app/assets/worldwanderer-map.jpg"
       ],
+      "softwareVersion": "1.2",
       "inLanguage": ["en", "cs", "sk"]
     }
     </script>
@@ -60,6 +61,14 @@
       <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-13a7 7 0 0 0-14 0c0 6.8 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></symbol>
       <symbol id="icon-tree" viewBox="0 0 24 24"><path d="M12 3L7 10h3l-4 6h12l-4-6h3L12 3z"/><path d="M12 16v5M8 21h8"/></symbol>
       <symbol id="icon-scroll" viewBox="0 0 24 24"><path d="M8 4h9a2 2 0 0 1 2 2v11"/><path d="M8 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h9a2 2 0 0 0 2-2"/><path d="M8 4H6a2 2 0 0 0-2 2v1h4"/><path d="M12 9h4M12 13h4"/></symbol>
+      <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></symbol>
+      <symbol id="icon-photos" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></symbol>
+      <symbol id="icon-share" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5v10h14V11h-1"/></symbol>
+      <symbol id="icon-medal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><path d="M8.5 10L6 3h4l2 5 2-5h4l-2.5 7"/><path d="M12 12.5l.9 1.8 2 .3-1.4 1.4.3 2-1.8-.9-1.8.9.3-2-1.4-1.4 2-.3z"/></symbol>
+      <symbol id="icon-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H16a3 3 0 0 0 0-6H8a3 3 0 0 1 0-6h7.5"/></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M12 13.5l.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2z"/></symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"/></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
     </svg>
 
     <header class="site-header">
@@ -69,6 +78,7 @@
       </a>
       <div class="header-links">
         <nav aria-label="Primary navigation">
+          <a href="#whats-new" data-i18n="nav.whatsNew">What's new</a>
           <a href="#apple-maps" data-i18n="nav.appleMaps">Apple Maps</a>
           <a href="#categories" data-i18n="nav.categories">Categories</a>
           <a href="support.html" data-i18n="nav.support">Support</a>
@@ -105,6 +115,56 @@
           <div class="phone-shot map-shot">
             <img src="assets/worldwanderer-map.jpg" alt="Worldwanderer Apple Maps iPhone screen" width="720" height="1564">
           </div>
+        </div>
+      </section>
+
+      <section id="whats-new" class="whats-new" aria-label="New in Worldwanderer 1.2">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="new.eyebrow">New in version 1.2</p>
+          <h2 data-i18n="new.title">The biggest Worldwanderer update yet.</h2>
+          <p data-i18n="new.text">See your world fill in, turn your camera roll into saved places, and share where you have been. Now runs on iOS 18 and later.</p>
+        </div>
+        <div class="new-grid">
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-globe"></use></svg></span>
+            <h3 data-i18n="new.worldTitle">Your world</h3>
+            <p data-i18n="new.worldText">Every country you visit lights up on a world map, with continent progress and flags. Works offline.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-photos"></use></svg></span>
+            <h3 data-i18n="new.photosTitle">Find places in your photos</h3>
+            <p data-i18n="new.photosText">Worldwanderer suggests places from where your photos were taken. The scan runs on your iPhone and nothing is saved until you confirm.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-share"></use></svg></span>
+            <h3 data-i18n="new.shareTitle">Share cards</h3>
+            <p data-i18n="new.shareText">Share beautiful cards of your places, trips, badges and world map. Cards show the country, never coordinates or photo location data.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-medal"></use></svg></span>
+            <h3 data-i18n="new.badgesTitle">Badge unlock moments</h3>
+            <p data-i18n="new.badgesText">Badges now celebrate the moment you unlock them, and Home shows the one you are closest to next.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-route"></use></svg></span>
+            <h3 data-i18n="new.tripsTitle">Places on your trips</h3>
+            <p data-i18n="new.tripsText">Connect places to your trips and see the route on a map, with places from the trip dates suggested first.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-calendar"></use></svg></span>
+            <h3 data-i18n="new.yearTitle">Year in review</h3>
+            <p data-i18n="new.yearText">Your year of exploring at a glance: places, new countries, your busiest month, longest trip and badges, ending in a shareable card.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-heart"></use></svg></span>
+            <h3 data-i18n="new.wishlistTitle">Wishlist</h3>
+            <p data-i18n="new.wishlistText">Save places you want to visit. Check them off yourself, or let Worldwanderer mark them visited when you open the app there.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg><use href="#icon-search"></use></svg></span>
+            <h3 data-i18n="new.searchTitle">Place search</h3>
+            <p data-i18n="new.searchText">Search a place by name to fill in its coordinates, or keep entering latitude and longitude by hand for spots off the map.</p>
+          </article>
         </div>
       </section>
 
